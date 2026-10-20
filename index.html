@@ -6,19 +6,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
   <style>
     :root {
-      --blush: #b573db;
-      --dusty: #D5BCE6;
-      --gold: #B49ACB;
-      --cream: #ebdcf7;
-      --ink: #5C4A70;
-      --soft-ink: #80708E;
+      --blush: #b998d6;
+      --dusty: #dcc9ee;
+      --gold: #c7a7d8;
+      --cream: #f3ebfb;
+      --ink: #4e3b63;
+      --soft-ink: #6a537d;
     }
 
     * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
-      background: var(--blush);
+      background: linear-gradient(180deg, #d7c2ee 0%, #d9caef 100%);
     }
 
     body {
@@ -131,18 +131,18 @@
 
     .envelope-bg {
       background:
-        radial-gradient(circle at 11% 14%, rgba(249,245,252,.78) 0 2px, transparent 2.5px),
-        radial-gradient(circle at 78% 20%, rgba(180,154,203,.22) 0 1px, transparent 1.8px),
-        linear-gradient(160deg, #E0D1EC 0%, var(--blush) 52%, #D6C2E5 100%);
+        radial-gradient(circle at 11% 14%, rgba(249,245,252,.8) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 78% 20%, rgba(116,90,146,.18) 0 1px, transparent 1.8px),
+        linear-gradient(160deg, #f0e5fb 0%, #d7c0ee 52%, #c8b0e2 100%);
     }
 
     .envelope-card {
       width: 100%;
       min-height: 27rem;
       position: relative;
-      border: 1px solid rgba(180,154,203,.75);
+      border: 1px solid rgba(146,110,179,.75);
       border-radius: 1.2rem;
-      background: linear-gradient(145deg, #E9DDF3, #CDB4E1);
+      background: linear-gradient(145deg, #f2e6fb, #d9c1ea);
       box-shadow: 0 24px 50px rgba(108,82,133,.22), inset 0 0 0 7px rgba(249,245,252,.42);
       overflow: hidden;
     }
@@ -210,7 +210,7 @@
       object-fit: cover;
       border-radius: 50%;
       opacity: .9;
-      filter: saturate(.76) brightness(1.14);
+      filter: hue-rotate(-90deg) saturate(.85) brightness(1.12);
       mix-blend-mode: multiply;
       pointer-events: none;
     }
@@ -254,8 +254,8 @@
       border: 1px solid var(--gold);
       border-radius: 999px;
       color: #FCF9FF;
-      background: linear-gradient(135deg, #AD92CA, #8666A8);
-      box-shadow: 0 9px 20px rgba(125,93,157,.2);
+      background: linear-gradient(135deg, #d0b0e5, #9f7ac0);
+      box-shadow: 0 9px 20px rgba(125,93,157,.24);
       font-family: "Playfair Display", serif;
       font-weight: 600;
       transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
@@ -273,14 +273,16 @@
     }
 
     .letter-bg {
-      background: linear-gradient(180deg, #E4D8EF 0%, #EDE3F3 100%);
+      background: linear-gradient(180deg, #efe3f9 0%, #f4ecfb 100%);
     }
 
     .letter-paper {
       position: relative;
       padding: 2.4rem 1.55rem;
       border: 1px solid var(--gold);
-      background: var(--cream);
+      overflow: hidden;
+      border-radius: 1rem;
+      background: #f7f1fd;
       box-shadow: 0 18px 45px rgba(92,74,112,.15);
     }
 
@@ -311,7 +313,8 @@
       height: 7.6rem;
       position: absolute;
       object-fit: cover;
-      opacity: .48;
+      opacity: .68;
+      filter: hue-rotate(-90deg) saturate(.85) brightness(1.12);
       mix-blend-mode: multiply;
       pointer-events: none;
     }
@@ -321,16 +324,16 @@
 
     .details-bg {
       background:
-        radial-gradient(circle at 90% 10%, rgba(180,154,203,.2), transparent 24%),
-        radial-gradient(circle at 4% 90%, rgba(213,188,230,.78), transparent 28%),
-        var(--cream);
+        radial-gradient(circle at 90% 10%, rgba(152,115,191,.18), transparent 24%),
+        radial-gradient(circle at 4% 90%, rgba(206,180,233,.8), transparent 28%),
+        #f1e8fb;
     }
 
     .details-panel {
       padding: 2.25rem 1.45rem;
       border-top: 4px solid var(--gold);
       border-bottom: 4px solid var(--gold);
-      background: rgba(249,245,252,.8);
+      background: rgba(250,246,255,.82);
       box-shadow: 0 20px 40px rgba(92,74,112,.12);
     }
 
@@ -379,9 +382,9 @@
     }
 
     .confirm-button {
-      background: linear-gradient(135deg, #D5BCE6, #B69ACF);
-      color: #4D3A61;
-      border-color: #DED0ED;
+      background: linear-gradient(135deg, #d9c5ef, #b190d1);
+      color: #4d3963;
+      border-color: #e4d5f0;
     }
 
     .link-note {
@@ -415,37 +418,37 @@
   <script src="/_sdk/05ccb5a43e5da88c.editing_sdk.js" type="text/javascript" integrity="sha512-FG1JRTGLHBjGwSq9y04ZmvkRvH245Ed36cKu7nnxxflQ7rhXj0x+4IVTVXVcLTY+FAKRl9u95V461lUElEGzSA=="></script>
   <script src="/_sdk/57b0d490ad965030.resizing_sdk.js" type="text/javascript" integrity="sha512-0E/Vciw6DeZsntFSvbQDPDCkFqYpKUFCf9koNzM+aGgKAlLTlttxAypYigNt+2G8S1SiWtvdbzbwtRDC3UigRg=="></script>
  </head>
- <body data-template-id="__page-root" style="background: rgb(252, 232, 239);">
+ <body data-template-id="__page-root" style="background: linear-gradient(180deg, #d9c7f1 0%, #d1b8e8 100%);">
   <div class="app-shell">
    <nav class="nav-dots" aria-label="Navegación de la invitación"><a class="nav-dot" href="#portada" aria-label="Ir a la portada"></a> <a class="nav-dot" href="#carta" aria-label="Ir a la carta"></a> <a class="nav-dot" href="#detalles" aria-label="Ir a los detalles"></a> <a class="nav-dot" href="#confirmacion" aria-label="Ir a la confirmación"></a>
    </nav>
    <main>
     <section id="portada" class="invitation-section envelope-bg" aria-labelledby="cover-title"><span class="sparkle" style="top:15%; right:17%;"></span> <span class="sparkle small delay" style="top:28%; left:9%;"></span> <span class="sparkle slower" style="bottom:18%; right:10%;"></span>
      <div class="section-content float-in">
-      <div data-template-id="envelope-card" class="envelope-card canva-card" style="background: linear-gradient(145deg, rgb(251, 223, 232), rgb(244, 202, 216));"><img data-template-id="envelope-flower-top" class="canva-image flower-corner flower-top" loading="lazy" src="https://images.pexels.com/photos/9876030/pexels-photo-9876030.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo de rosas pastel rosadas visto desde arriba"> <img data-template-id="envelope-flower-bottom" class="canva-image flower-corner flower-bottom" loading="lazy" src="https://images.pexels.com/photos/9876030/pexels-photo-9876030.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo de rosas pastel rosadas visto desde arriba">
+      <div data-template-id="envelope-card" class="envelope-card canva-card" style="background: linear-gradient(145deg, rgb(241, 229, 250), rgb(214, 186, 229));"><img data-template-id="envelope-flower-top" class="canva-image flower-corner flower-top" loading="lazy" src="https://images.pexels.com/photos/9876030/pexels-photo-9876030.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo de rosas en tonos lilas visto desde arriba"> <img data-template-id="envelope-flower-bottom" class="canva-image flower-corner flower-bottom" loading="lazy" src="https://images.pexels.com/photos/9876030/pexels-photo-9876030.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo de rosas en tonos lilas visto desde arriba">
        <div class="butterfly" style="top:19%; right:13%;" aria-hidden="true"><i data-lucide="butterfly"></i>
        </div>
        <div class="envelope-content">
-        <p data-template-id="cover-kicker" class="canva-text section-eyebrow" style="color: rgb(201, 164, 92); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Una noche para recordar</p>
+        <p data-template-id="cover-kicker" class="canva-text section-eyebrow" style="color: rgb(144, 112, 178); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Una noche para recordar</p>
         <div class="gold-rule"></div>
-        <h1 id="cover-title" data-template-id="cover-title" class="canva-text mb-3" style="color: rgb(104, 70, 85); font-weight: 600; font-style: normal; font-size: 32px;">Mis XV Años</h1>
-        <p data-template-id="cover-name" class="canva-text script-name" style="color: rgb(201, 164, 92); font-weight: 400; font-style: normal; font-size: 39px; line-height: 1.1;">Mia Alexandra Leguizamón Adorno</p>
+        <h1 id="cover-title" data-template-id="cover-title" class="canva-text mb-3" style="color: rgb(83, 63, 101); font-weight: 600; font-style: normal; font-size: 32px;">Mis XV Años</h1>
+        <p data-template-id="cover-name" class="canva-text script-name" style="color: rgb(146, 109, 177); font-weight: 400; font-style: normal; font-size: 39px; line-height: 1.1;">Mia Alexandra</p>
        </div>
-       <div data-template-id="wax-seal" class="canva-tag wax-seal" style="background: radial-gradient(circle at 35% 28%, rgb(226, 199, 120), rgb(201, 164, 92) 55%, rgb(159, 120, 58)); color: rgb(255, 249, 245); font-weight: 700; font-style: normal; font-size: 26px;">XV</div>
+       <div data-template-id="wax-seal" class="canva-tag wax-seal" style="background: radial-gradient(circle at 35% 28%, rgb(214, 185, 233), rgb(156, 120, 188) 55%, rgb(104, 78, 129)); color: rgb(255, 249, 245); font-weight: 700; font-style: normal; font-size: 26px;">XV</div>
       </div><button id="open-invitation" data-template-id="open-invitation-button" class="canva-button action-button mt-7" type="button" style="background: linear-gradient(135deg, rgb(208, 155, 174), rgb(189, 116, 143)); color: rgb(255, 249, 245);"> <i data-lucide="mail-open" aria-hidden="true"></i> <span data-template-id="open-invitation-label" class="canva-text" style="color: rgb(255, 249, 245); font-weight: 600; font-style: normal; font-size: 17px;">Abrir mi invitación</span> </button>
      </div>
     </section>
     <section id="carta" class="invitation-section letter-bg" aria-labelledby="letter-heading"><span class="sparkle small" style="top:12%; left:11%;"></span> <span class="sparkle delay" style="bottom:14%; right:9%;"></span>
      <div class="section-content">
-      <article data-template-id="letter-paper" class="letter-paper canva-card" style="background: rgb(255, 249, 245);"><img data-template-id="letter-flower-top" class="canva-image letter-flower top" loading="lazy" src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo romántico de flores ranúnculos rosadas"> <img data-template-id="letter-flower-bottom" class="canva-image letter-flower bottom" loading="lazy" src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo romántico de flores ranúnculos rosadas">
+      <article data-template-id="letter-paper" class="letter-paper canva-card" style="background: rgb(255, 249, 245);"><img data-template-id="letter-flower-top" class="canva-image letter-flower top" loading="lazy" src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo romántico de ranúnculos en tonos lilas"> <img data-template-id="letter-flower-bottom" class="canva-image letter-flower bottom" loading="lazy" src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ramo romántico de ranúnculos en tonos lilas">
        <div class="relative z-10 text-center">
-        <p data-template-id="letter-kicker" class="canva-text section-eyebrow" style="color: rgb(201, 164, 92); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Con mucho cariño</p>
+        <p data-template-id="letter-kicker" class="canva-text section-eyebrow" style="color: rgb(144, 112, 178); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Con mucho cariño</p>
         <div class="gold-rule"></div>
-        <h2 id="letter-heading" data-template-id="letter-name" class="canva-text script-name mb-8" style="color: rgb(201, 164, 92); font-weight: 400; font-style: normal; font-size: 43px; line-height: 1.1;">Mia Alexandra Leguizamón Adorno</h2>
+        <h2 id="letter-heading" data-template-id="letter-name" class="canva-text script-name mb-8" style="color: rgb(146, 109, 177); font-weight: 400; font-style: normal; font-size: 43px; line-height: 1.1;">Mia Alexandra</h2>
         <div class="letter-copy">
-         <p data-template-id="letter-paragraph-one" class="canva-text mb-6" style="color: rgb(104, 70, 85); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">Hay momentos en la vida que son únicos, sueños que se hacen realidad y recuerdos que permanecen para siempre.</p>
-         <p data-template-id="letter-paragraph-two" class="canva-text mb-6" style="color: rgb(104, 70, 85); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">Hoy comienza una nueva etapa en mi vida y quiero compartir esta noche tan especial contigo.</p>
-         <p data-template-id="letter-paragraph-three" class="canva-text" style="color: rgb(104, 70, 85); font-weight: 600; font-style: normal; font-size: 17px; line-height: 1.8;">Con mucha alegría te invito a celebrar mis XV años.</p>
+         <p data-template-id="letter-paragraph-one" class="canva-text mb-6" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">Hay momentos en la vida que son únicos, sueños que se hacen realidad y recuerdos que permanecen para siempre.</p>
+         <p data-template-id="letter-paragraph-two" class="canva-text mb-6" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">Hoy comienza una nueva etapa en mi vida y quiero compartir esta noche tan especial contigo.</p>
+         <p data-template-id="letter-paragraph-three" class="canva-text" style="color: rgb(83, 63, 101); font-weight: 600; font-style: normal; font-size: 17px; line-height: 1.8;">Con mucha alegría te invito a celebrar mis XV años.</p>
         </div>
         <div class="gold-rule mt-9"></div>
         <div class="butterfly relative inline-flex mt-1" aria-hidden="true"><i data-lucide="butterfly"></i>
@@ -458,21 +461,29 @@
      <div class="section-content">
       <div data-template-id="details-panel" class="details-panel canva-panel" style="background: rgb(255, 249, 245);">
        <header class="text-center mb-7">
-        <p data-template-id="details-kicker" class="canva-text section-eyebrow" style="color: rgb(201, 164, 92); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Celebremos juntos</p>
-        <h2 id="details-title" data-template-id="details-title" class="canva-text mt-2" style="color: rgb(104, 70, 85); font-weight: 600; font-style: normal; font-size: 24px;">Detalles del evento</h2>
+        <p data-template-id="details-kicker" class="canva-text section-eyebrow" style="color: rgb(144, 112, 178); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Celebremos juntos</p>
+        <h2 id="details-title" data-template-id="details-title" class="canva-text mt-2" style="color: rgb(83, 63, 101); font-weight: 600; font-style: normal; font-size: 24px;">Detalles del evento</h2>
         <div class="gold-rule"></div>
        </header>
        <div class="detail-list">
         <div class="detail-row"><span class="detail-icon" aria-hidden="true"><i data-lucide="calendar-days"></i></span>
-         <p data-template-id="event-date" class="canva-text m-0" style="color: rgb(104, 70, 85); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Fecha: 30/10</p>
+         <p data-template-id="event-date" class="canva-text m-0" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Fecha: 30/10</p>
         </div>
         <div class="detail-row"><span class="detail-icon" aria-hidden="true"><i data-lucide="clock-3"></i></span>
-         <p data-template-id="event-time" class="canva-text m-0" style="color: rgb(104, 70, 85); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Hora: 20:00</p>
+         <p data-template-id="event-time" class="canva-text m-0" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Hora: 20:00</p>
         </div>
         <div class="detail-row"><span class="detail-icon" aria-hidden="true"><i data-lucide="map-pin"></i></span>
-         <p data-template-id="event-address" class="canva-text m-0" style="color: rgb(104, 70, 85); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Dirección: Sede Social Coop. Capiata</p>
+         <p data-template-id="event-address" class="canva-text m-0" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Dirección: Sede Social Coop. Capiata</p>
         </div>
-       </div><button id="map-button" data-template-id="map-button" class="canva-button action-button mt-7" type="button" style="background: linear-gradient(135deg, rgb(208, 155, 174), rgb(189, 116, 143)); color: rgb(255, 249, 245);"> <i data-lucide="navigation" aria-hidden="true"></i> <span data-template-id="map-button-label" class="canva-text" style="color: rgb(255, 249, 245); font-weight: 600; font-style: normal; font-size: 17px;">Cómo llegar</span> </button>
+        <div class="detail-row"><span class="detail-icon" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+         <p data-template-id="event-attire" class="canva-text m-0" style="color: rgb(83, 63, 101); font-weight: 500; font-style: normal; font-size: 17px; line-height: 1.4;">Tenida Elegante</p>
+        </div>
+        <div class="detail-row"><span class="detail-icon" aria-hidden="true"><i data-lucide="users-round"></i></span>
+         <p data-template-id="event-guests" class="canva-text m-0" style="color: rgb(83, 63, 101); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.4;">Invitación válida para 1 persona + 1 acompañante adulto</p>
+        </div>
+       </div>
+       <p class="canva-text" style="margin-top: 1.1rem; margin-bottom: 0; text-align: center; color: rgb(83, 63, 101); font-weight: 500; font-style: normal; font-size: 0.96rem; line-height: 1.6; letter-spacing: 0.03em;">Confirmá tu asistencia hasta el <strong>20/10</strong>.</p>
+       <button id="map-button" data-template-id="map-button" class="canva-button action-button mt-7" type="button" style="background: linear-gradient(135deg, rgb(208, 155, 174), rgb(189, 116, 143)); color: rgb(255, 249, 245);"> <i data-lucide="navigation" aria-hidden="true"></i> <span data-template-id="map-button-label" class="canva-text" style="color: rgb(255, 249, 245); font-weight: 600; font-style: normal; font-size: 17px;">Cómo llegar</span> </button>
        <p id="map-note" data-template-id="map-note" class="canva-text link-note is-hidden" role="status" style="background: rgb(255, 249, 245); color: rgb(139, 100, 116); font-weight: 400; font-style: italic; font-size: 13px; line-height: 1.4;">Añade aquí el enlace externo de Google Maps antes de publicar la invitación.</p>
       </div>
      </div>
@@ -482,8 +493,8 @@
       <div data-template-id="confirmation-card" class="confirm-card canva-card" style="background: rgba(111, 64, 86, 0.4);">
        <div class="flex justify-center mb-5" aria-hidden="true"><i data-lucide="heart" style="width:2rem;height:2rem;"></i>
        </div>
-       <p data-template-id="confirmation-kicker" class="canva-text section-eyebrow" style="color: rgb(244, 222, 172); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Te espero</p>
-       <h2 id="confirmation-title" data-template-id="confirmation-message" class="canva-text mt-5 mb-8" style="color: rgb(255, 249, 245); font-weight: 500; font-style: normal; font-size: 24px; line-height: 1.4;">Tu presencia hará que esta noche sea aún más especial.</h2><button id="whatsapp-button" data-template-id="whatsapp-button" class="canva-button confirm-button action-button" type="button" style="background: linear-gradient(135deg, rgb(233, 181, 200), rgb(210, 140, 168)); color: rgb(95, 53, 70);"> <i data-lucide="message-circle" aria-hidden="true"></i> <span data-template-id="whatsapp-button-label" class="canva-text" style="color: rgb(95, 53, 70); font-weight: 600; font-style: normal; font-size: 17px;">Confirmar asistencia</span> </button>
+       <p data-template-id="confirmation-kicker" class="canva-text section-eyebrow" style="color: rgb(233, 215, 247); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.18rem;">Te espero</p>
+       <h2 id="confirmation-title" data-template-id="confirmation-message" class="canva-text mt-5 mb-8" style="color: rgb(255, 249, 245); font-weight: 500; font-style: normal; font-size: 24px; line-height: 1.4;">Tu presencia hará que esta noche sea aún más especial.</h2><button id="whatsapp-button" data-template-id="whatsapp-button" class="canva-button confirm-button action-button" type="button" style="background: linear-gradient(135deg, rgb(219, 194, 239), rgb(170, 131, 210)); color: rgb(76, 58, 96);"> <i data-lucide="message-circle" aria-hidden="true"></i> <span data-template-id="whatsapp-button-label" class="canva-text" style="color: rgb(76, 58, 96); font-weight: 600; font-style: normal; font-size: 17px;">Confirmar asistencia</span> </button>
        <p id="whatsapp-note" data-template-id="whatsapp-note" class="canva-text link-note is-hidden" role="status" style="background: rgb(255, 249, 245); color: rgb(139, 100, 116); font-weight: 400; font-style: italic; font-size: 13px; line-height: 1.4;">Añade aquí el enlace de WhatsApp para confirmar asistencia antes de publicar la invitación.</p>
       </div>
      </div>
